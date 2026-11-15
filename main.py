@@ -88,7 +88,7 @@ def OR(ms,tm):
  ms.sort(key=lambda m:1<<28 if m==tm else 100000+V[abs(B[m[1]])]*16-V[abs(B[m[0]])] if B[m[1]] else 0,reverse=True);return ms
 def N(d,a,b):
  NC[0]+=1
- if NC[0]>5e4:NC[1]=1;return SC if W else-SC
+ if NC[0]>1e5:NC[1]=1;return SC if W else-SC
  if d<=0:
   st=SC if W else-SC
   a=max(a,st)
